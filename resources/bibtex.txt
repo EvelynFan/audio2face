@@ -1,6 +1,6 @@
-@inproceedings{author20XXtitle,
-  title={Please cite me},
-  author={Author, First and Author, Second and Author, Third},
-  booktitle={Conference},
-  year={20XX}
+@article{fan2021faceformer,
+  title={FaceFormer: Speech-Driven 3D Facial Animation with Transformers},
+  author={Fan, Yingruo and Lin, Zhaojiang and Saito, Jun and Wang, Wenping and Komura, Taku},
+  journal={arXiv preprint arXiv:2112.05329},
+  year={2021}
 }
