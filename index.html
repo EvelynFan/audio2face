@@ -118,7 +118,7 @@
 
 <html>
 <head>
-	<title>FaceFormer: Speech-Driven 3D Facial Animation with Transformerse</title>
+	<title>This is my paper title</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="FaceFormer: Speech-Driven 3D Facial Animation with Transformers" />
 	<meta property="og:description" content="Paper description." />
@@ -137,9 +137,181 @@
 
 <body>
 	<br>
+	<center>
+		<span style="font-size:35px">FaceFormer: Speech-Driven 3D Facial Animation with Transformers</span>
+	<br>
+	<br>
+	<hr>
+	<br>
+		<table align=center width=800px>
+			<table align=center width=800px>
+				<tr>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:18px"><a href="">Yingruo Fan<sup>1</sup></a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:18px"><a href="">Zhaojiang Lin<sup>2</sup></a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:18px"><a href="">Jun Saito<sup>3</sup></a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:18px"><a href="">Wenping Wang<sup>1,4</sup></a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:18px"><a href="">Taku Komura<sup>1</sup></a></span>
+						</center>
+					</td>
+				</tr>
+			</table>
+
+		<br>
+
+			<table align=center width=1000px>
+				<tr>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:18px"><sup>1</sup>The University of Hong Kong</span>
+						</center>
+					</td>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:18px"><sup>2</sup>The Hong Kong University of Science and Technology</span>
+						</center>
+					</td>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:18px"><sup>3</sup>Adobe Research</span>
+						</center>
+					</td>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:18px"><sup>4</sup>Texas A&M University</span>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</table>
+	</center>
+
+<br>
+<br>
+
+	<center>
+		<table align=center width=850px>
+			<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:550px" src="./resources/teaser.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+		<table align=center width=850px>
+			<tr>
+				<td>
+					Given the raw audio input and a neutral 3D face mesh, our proposed end-to-end Transformer-based architecture, dubbed FaceFormer, can autoregressively synthesize a sequence of realistic 3D facial motions with accurate lip movements.
+				</td>
+			</tr>
+		</table>
+	</center>
+
+<br>
+<hr>
+
+	<table align=center width=850px>
+		<center><h1>Abstract</h1></center>
+		<tr>
+			<td>
+				Speech-driven 3D facial animation is challenging due to the complex geometry of human faces and the limited availability of 3D audio-visual data. Prior works typically focus on learning phoneme-level features of short audio windows with limited context, occasionally resulting in inaccurate lip movements. To tackle this limitation, we propose a Transformer-based autoregressive model, FaceFormer, which encodes the long-term audio context and autoregressively predicts a sequence of animated 3D face meshes. To cope with the data scarcity issue, we integrate the self-supervised pre-trained speech representations. Also, we devise two biased attention mechanisms well suited to this specific task, including the biased crossmodal multi-head (MH) attention and the biased causal MH self-attention with a periodic positional encoding strategy. The former effectively aligns the audio-motion modalities, whereas the latter offers abilities to generalize to longer audio sequences. Extensive experiments and a perceptual user study show that our approach outperforms the existing state-of-the-arts.
+			</td>
+		</tr>
+	</table>
+
+<br>
+<hr>
+
+
+	<table align=center width=900px>
+		<center><h1>Paper</h1></center>
+		<tr>
+			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
+			<td><span style="font-size:14pt">
+				FaceFormer: Speech-Driven 3D Facial Animation with Transformers. <i>CVPR 2022</i>.<br>
+				<br>
+				Yingruo Fan, Zhaojiang Lin, Jun Saito, Wenping Wang, Taku Komura<br>
+				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+				<span style="font-size:4pt"><a href="https://arxiv.org/pdf/2112.05329.pdf"><br></a>
+				</span>
+			</td>
+		</tr>
+	</table>
+	
+	<table align=center width=400px>
+				<tr>
+					<td align=center width=240px>
+						<center>
+							<span style="font-size:20px"><a href='https://arxiv.org/pdf/2112.05329.pdf'>Paper</a></span>
+						</center>
+					</td>
+					<td align=center width=240px>
+						<center>
+							<span style="font-size:20px"><a href='https://github.com/EvelynFan/FaceFormer'>Code</a></span><br>
+						</center>
+					</td>
+					<td align=center width=240px>
+						<center>
+							<span style="font-size:20px"><a href='./resources/bibtex.txt'>Bibtex</a></span><br>
+						</center>
+					</td>
+				</tr>
+			</table>
+
+	<br>
+	<hr>
+
+	<center><h1>Video</h1></center>
 	<p align="center">
-		<iframe width="1200" height="680" src="./resources/video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+		<iframe width="800" height="450" src="./resources/video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
 	</p>
+	<br>
+	<hr>
+
+<!-- 
+
+	<center><h1>Method</h1></center>
+	<table align=center width=600px>
+		<tr>
+			<td align=center width=600px>
+				<center>
+					<td><img class="round" style="width:600px" src="./resources/method_diagram.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<hr>
+	
+	 -->
+	<table align=center width=850px>
+		<center><h1>Acknowledgement</h1></center>
+		<tr>
+			<td>
+				We gratefully acknowledge <a href='https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html'>ETHZ-CVL</a> for providing the B3D(AC)2 database and <a href='https://voca.is.tue.mpg.de/'>MPI-IS</a> for releasing the VOCASET dataset.
+			</td>
+		</tr>
+	</table>
+
+
 <br>
 </body>
 </html>
